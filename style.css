@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./assest/background.gif');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+
+.stopwatch {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+#display {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.buttons button {
+    font-size: 1em;
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    flex: 1;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    color: #000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.buttons button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.buttons button:active {
+    transform: scale(0.98);
+}
+
+
+#start {
+    color: #000;
+}
+
+#pause {
+    color: #000;
+}
+
+#reset {
+    color: #000;
+}
+
+#lap {
+    color: #000;
+}
+
+
+ul#laps {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 0;
+}
+
+ul#laps li {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 1em;
+    color: #000;
+    font-weight: bolder;
+}
+
+
+ul#laps::-webkit-scrollbar {
+    width: 8px;
+}
+
+ul#laps::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+ul#laps::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+ul#laps::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
